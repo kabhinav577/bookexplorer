@@ -1,9 +1,9 @@
-import { Header } from '@/components/navbar/header';
+import { Hero } from '@/components/hero/hero';
 
 export default function Home() {
   return (
-    <div className="w-full h-full">
-      <Header />
-    </div>
+    <main className="w-full h-full">
+      <Hero />
+    </main>
   );
 }

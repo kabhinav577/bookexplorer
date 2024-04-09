@@ -14,7 +14,7 @@ export const Header = ({ className }: Props) => {
       <header className="hidden lg:block">
         <div
           className={cn(
-            'h-[60px] lg:w-full flex lg:fixed left-0 top-0 px-8 items-center justify-between',
+            'h-[60px] lg:w-full flex lg:fixed top-0 px-8 items-center justify-between',
             className
           )}
         >
