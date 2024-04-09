@@ -1,3 +1,9 @@
+import { Header } from '@/components/navbar/header';
+
 export default function Home() {
-  return <div className="text-2xl text-red-400 underline">Hello World!</div>;
+  return (
+    <div className="w-full h-full">
+      <Header />
+    </div>
+  );
 }
