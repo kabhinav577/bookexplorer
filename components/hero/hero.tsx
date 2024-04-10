@@ -46,7 +46,7 @@ export const Hero = ({ books }: Props) => {
           of books to suit every taste and interest. Start exploring our shelves
           today and uncover your next literary gem.
         </p>
-        <div className="w-[50%]">
+        <div className="w-[70%] lg:w-[50%]">
           <Input className="rounded-2xl" placeholder="Search books" />
         </div>
       </div>

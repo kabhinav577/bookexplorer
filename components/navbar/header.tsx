@@ -46,9 +46,7 @@ export const Header = ({ className }: Props) => {
           <div className="flex items-center gap-x-3">
             <Button variant="ghost">Sign in</Button>
             <Button variant="default">
-              <Link href="/books">
-                <span className="text-base font-medium">Get Started</span>
-              </Link>
+              <Link href="/books">Get Started</Link>
             </Button>
           </div>
         </div>
