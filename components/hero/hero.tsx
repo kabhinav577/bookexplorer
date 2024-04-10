@@ -1,24 +1,33 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
 import { Input } from '../ui/input';
-import { Shadows_Into_Light, Architects_Daughter } from 'next/font/google';
+import { Architects_Daughter } from 'next/font/google';
 import { cn } from '@/lib/utils';
-
-const shadowsIntoLight = Shadows_Into_Light({
-  subsets: ['latin'],
-  weight: '400',
-});
 
 const architectsDaughter = Architects_Daughter({
   subsets: ['latin'],
   weight: '400',
 });
 
-export const Hero = () => {
+type Props = {
+  books: any[];
+};
+
+export const Hero = ({ books }: Props) => {
+  console.log(books);
+
   return (
-    <main className="pt-[50px] w-full h-full flex flex-col lg:flex-row-reverse items-center justify-between my-12 gap-y-8 lg:px-20">
+    <main className="pt-[70px] w-full h-full flex flex-col lg:flex-row-reverse items-center justify-between my-12 gap-y-8 lg:px-20">
       <div className="flex w-full lg:w-[50%] items-center justify-center">
-        <Image src="/books.svg" width={450} height={450} alt="Hero" />
+        <Image
+          src="/books.svg"
+          width={350}
+          height={350}
+          alt="Hero"
+          className="w-[350px] h-[350px] lg:w-[450px] lg:h-[450px]"
+        />
       </div>
       <div className="lg:w-[50%] w-full flex flex-col gap-y-4 px-8  items-start justify-center">
         <h3 className="text-base font-medium text-slate-700">

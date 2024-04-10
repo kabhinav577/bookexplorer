@@ -1,9 +1,11 @@
 import { Hero } from '@/components/hero/hero';
+import { fetchBooks } from './action';
 
-export default function Home() {
+export default async function Home() {
+  const data = await fetchBooks();
   return (
     <main className="w-full h-full">
-      <Hero />
+      <Hero books={data} />
     </main>
   );
 }
