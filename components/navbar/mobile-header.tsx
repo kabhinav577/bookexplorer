@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const MobileHeader = () => {
   return (
-    <nav className="lg:hidden px-8 h-[60px] flex items-center justify-between fixed top-0 w-full z-50 bg-slate-100 border-b-2">
+    <nav className="lg:hidden px-8 h-[60px] flex items-center justify-between fixed top-0 w-full z-50 bg-green-200 border-b-2 border-green-100">
       <MobileSidebar />
       <div className="flex items-center gap-x-3">
         <Button variant="ghost">Sign in</Button>

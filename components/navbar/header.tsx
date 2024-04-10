@@ -20,7 +20,7 @@ export const Header = ({ className }: Props) => {
       <header className="hidden lg:block">
         <div
           className={cn(
-            'h-[60px] lg:w-full flex lg:fixed top-0 px-8 items-center justify-between bg-slate-100 border-b-2',
+            'h-[60px] lg:w-full flex lg:fixed top-0 px-8 items-center justify-between bg-green-200 border-b-2 border-green-100',
             className
           )}
         >
@@ -39,8 +39,8 @@ export const Header = ({ className }: Props) => {
 
           <div className="flex items-center gap-x-3">
             <HeaderItem label="Home" href="/" />
+            <HeaderItem label="Books" href="/books" />
             <HeaderItem label="Store" href="/store" />
-            <HeaderItem label="Community" href="/community" />
             <HeaderItem label="About Us" href="/about" />
           </div>
           <div className="flex items-center gap-x-3">

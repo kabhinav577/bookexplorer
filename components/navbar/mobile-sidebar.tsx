@@ -31,8 +31,8 @@ export const MobileSidebar = () => {
             </div>
           </Link>
           <HeaderItem label="Home" href="/" />
+          <HeaderItem label="Books" href="/books" />
           <HeaderItem label="Store" href="/store" />
-          <HeaderItem label="Community" href="/community" />
           <HeaderItem label="About Us" href="/about" />
         </div>
       </SheetContent>
