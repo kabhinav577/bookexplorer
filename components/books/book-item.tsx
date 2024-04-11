@@ -19,7 +19,7 @@ type Props = {
 
 export const BookItem = ({ book }: Props) => {
   return (
-    <Card className="bg-gradient-to-tr from-orange-100 to-amber-50">
+    <Card className="bg-gradient-to-tr from-orange-100 to-amber-50 flex justify-between flex-col">
       <CardContent className="p-0">
         <div className="flex w-full justify-between">
           <div className="w-[130px] h-[160px]">
@@ -49,12 +49,14 @@ export const BookItem = ({ book }: Props) => {
           </div>
         </div>
       </CardContent>
-      <CardHeader className="p-3">
+
+      <CardHeader className="p-3 mt-4">
         <CardTitle className="text-slate-700">
           {book.volumeInfo.title}
         </CardTitle>
         <CardDescription>{book.volumeInfo.authors.join(', ')}</CardDescription>
       </CardHeader>
+
       <CardContent className="p-3">
         <div className="flex w-full justify-between">
           <div className="flex justify-center items-center">

@@ -33,7 +33,7 @@ export const BookRatings = () => {
           </p>
           <div className="w-[50%] h-[60px] flex justify-center items-center">
             <div className="bg-orange-400 w-[40%] rounded-tl-sm rounded-bl-sm h-full flex flex-col items-center justify-center">
-              <span className="text-xl">4.0</span>
+              <span className="text-xl text-slate-200">4.0</span>
               <span>⭐️⭐️⭐️⭐️</span>
             </div>
             <div className="bg-white h-full w-[60%] rounded-tr-sm rounded-br-sm flex justify-center items-center text-slate-500 text-xl">
