@@ -16,10 +16,8 @@ type Props = {
 };
 
 export const Hero = ({ books }: Props) => {
-  console.log(books);
-
   return (
-    <main className="pt-[70px] w-full h-full flex flex-col lg:flex-row-reverse items-center justify-between my-12 gap-y-8 lg:px-20">
+    <main className="pt-[70px] w-full h-full flex flex-col lg:flex-row-reverse items-center justify-between mt-12 gap-y-8 lg:px-20 pb-10">
       <div className="flex w-full lg:w-[50%] items-center justify-center">
         <Image
           src="/books.svg"
@@ -29,7 +27,7 @@ export const Hero = ({ books }: Props) => {
           className="w-[350px] h-[350px] lg:w-[450px] lg:h-[450px]"
         />
       </div>
-      <div className="lg:w-[50%] w-full flex flex-col gap-y-4 px-8  items-start justify-center">
+      <div className="lg:w-[50%] w-full flex flex-col gap-y-4 px-8 lg:px-0  items-start justify-center">
         <h3 className="text-base font-medium text-slate-700">
           ⭐️ Start your reading journey today
         </h3>
