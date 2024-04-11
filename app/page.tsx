@@ -1,7 +1,8 @@
-import { Hero } from '@/components/hero/hero';
+import { Hero } from '@/components/home/hero';
 import { fetchBooks } from './action';
-import { BookRatings } from '@/components/hero/book-ratings';
-import { Features } from '@/components/hero/features';
+import { BookRatings } from '@/components/home/book-ratings';
+import { Features } from '@/components/home/features';
+import { PurchaseOptions } from '@/components/home/purchase-options';
 
 export default async function Home() {
   const data = await fetchBooks();
@@ -12,6 +13,7 @@ export default async function Home() {
       </div>
       <BookRatings />
       <Features />
+      <PurchaseOptions />
     </main>
   );
 }

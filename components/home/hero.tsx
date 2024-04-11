@@ -33,7 +33,7 @@ export const Hero = ({ books }: Props) => {
         </h3>
         <h1
           className={cn(
-            'text-4xl lg:text-5xl font-extrabold text-slate-800 tracking-wide',
+            'text-4xl font-extrabold text-slate-800 tracking-wide',
             architectsDaughter.className
           )}
         >
