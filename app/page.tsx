@@ -3,6 +3,7 @@ import { fetchBooks } from './action';
 import { BookRatings } from '@/components/home/book-ratings';
 import { Features } from '@/components/home/features';
 import { PurchaseOptions } from '@/components/home/purchase-options';
+import { Footer } from '@/components/footer/footer';
 
 export default async function Home() {
   const data = await fetchBooks();
@@ -14,6 +15,7 @@ export default async function Home() {
       <BookRatings />
       <Features />
       <PurchaseOptions />
+      <Footer />
     </main>
   );
 }
